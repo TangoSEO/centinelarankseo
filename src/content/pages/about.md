@@ -1,6 +1,13 @@
 ---
-description: 
+title: Jessica Schmukler | SEO Specialist in Tandil, Argentina
+seo:
+  title: Expert SEO Services | Jessica Schmukler | Tandil, Argentina
+  description: Test description short # <-- Keep this super short version for now
+  image:
+    src: '/about.jpeg' # <-- Make sure to replace this with your actual image path
+    alt: Jessica Schmukler, SEO & CRO Specialist based in Tandil, Argentina
 ---
+
 
 ## Jessica Schmukler - Your Expert SEO Specialist in Tandil, Argentina
 
