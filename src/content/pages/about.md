@@ -2,7 +2,7 @@
 title: Jessica Schmukler | SEO Specialist in Tandil, Argentina
 seo:
   title: Expert SEO Services | Jessica Schmukler | Tandil, Argentina
-  description: Jessica Schmukler offers expert SEO services in Tandil, Argentina, including technical SEO, keyword research, content strategy, and YouTube optimization. Boost your online presence today.
+  description: Expert SEO services in Tandil, Argentina by Jessica Schmukler. Specializing in technical SEO, keyword research, content strategy & YouTube optimization. Boost your site!
   image:
     src: '/about.jpeg' # <-- Make sure to replace this with your actual image path
     alt: Jessica Schmukler, SEO & CRO Specialist based in Tandil, Argentina
