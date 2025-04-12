@@ -1,11 +1,11 @@
 ---
 import { getCollection } from 'astro:content';
-import BaseLayout from '../layouts/BaseLayout.astro';
 import Button from '../components/Button.astro';
 import Hero from '../components/Hero.astro';
 import PostPreview from '../components/PostPreview.astro';
 import ProjectPreview from '../components/ProjectPreview.astro';
 import siteConfig from '../data/site-config';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import { sortItemsByDateDesc } from '../utils/data-utils';
 
 const posts = (await getCollection('blog')).sort(sortItemsByDateDesc);
@@ -16,7 +16,58 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
 ---
 
 <BaseLayout description={siteConfig.description} image={siteConfig.image}>
+    <!-- Hero original -->
     <Hero />
+
+    <!-- NUEVO BLOQUE SEO ––––––––––––––––––––––––––––––––––– -->
+    <section class="prose prose-invert mx-auto px-4 py-16">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Jessica Schmukler – SEO Specialist in Tandil, Argentina</h1>
+
+        <p>
+            <strong>Hello!</strong> I'm Jessica Schmukler, an SEO &amp; CRO specialist with 6&nbsp;years of experience helping businesses boost visibility, traffic,
+            and revenue.
+        </p>
+
+        <h2>Professional SEO Services</h2>
+        <p>As your trusted <strong>SEO Specialist in Tandil</strong>, I provide full‑stack services to elevate your search performance.</p>
+
+        <h3>Strategic Keyword Research</h3>
+        <p>I uncover high‑value search terms your ideal customers use—locally and internationally.</p>
+
+        <h3>Technical SEO Audits &amp; Optimization</h3>
+        <p>Site speed, crawlability, schema, indexation—everything that helps Google love your site.</p>
+
+        <h3>SEO‑Optimized Content Creation</h3>
+        <p>Blog posts, landing pages, and service pages crafted to rank and convert.</p>
+
+        <h3>YouTube SEO &amp; CRO</h3>
+        <p>Maximize video reach and turn viewers into loyal clients.</p>
+
+        <h2>Why Work With Me?</h2>
+
+        <h3>Data‑Driven Results</h3>
+        <p>Comprehensive analytics to diagnose issues and prove ROI.</p>
+
+        <h3>Local Expertise, Global Perspective</h3>
+        <p>Based in Tandil, fluent in Spanish & English, experienced with international best practices.</p>
+
+        <h3>Continuous Learning</h3>
+        <p>I stay ahead of algorithm updates and AI innovations to keep your strategy cutting‑edge.</p>
+
+        <h2>Ready to Grow?</h2>
+        <p>Need <strong>Technical SEO</strong>, targeted <strong>Keyword Research</strong>, or a full organic strategy? Let’s talk.</p>
+
+        <p>
+            <a
+                href="mailto:hola@centinelarank.com"
+                class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg shadow transition"
+            >
+                Book Your Free 30‑Minute Consultation
+            </a>
+        </p>
+    </section>
+    <!-- FIN BLOQUE SEO –––––––––––––––––––––––––––––––––––––– -->
+
     {
         featuredProjects?.length > 0 && (
             <div class="mb-16 sm:mb-24">
@@ -30,6 +81,7 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
             </div>
         )
     }
+
     {
         featuredPosts?.length > 0 && (
             <div class="mb-16 sm:mb-24">
