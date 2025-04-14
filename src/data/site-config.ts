@@ -89,22 +89,21 @@ const siteConfig: SiteConfig = {
         title: "Turn Google into your best salesperson.",
         text:
             "I'm **Jessica Schmukler**, SEO & CRO specialist in Tandil, Argentina. I fix what's blocking your rankings, flood you with qualified traffic, and turn clicks into paying clients. <a href='mailto:hola@centinelarank.com'>Book a free 30‑min consult →</a>",
-    }      
         image: {
-        src: '/hero.jpeg',
-        alt: 'A person sitting at a desk in front of a computer'
-    },
-    actions: [
-        {
-            text: 'Get in Touch',
-            href: '/contact'
-        }
-    ]
-},
+            src: "/hero.jpeg",
+            alt: "A person sitting at a desk in front of a computer",
+        },
+        actions: [
+            {
+                text: "Get in Touch",
+                href: "/contact",
+            },
+        ],
+    }, //  ←  coma importante
     subscribe: {
-        title: 'Subscribe to my SEO Newsletter',
-        text: 'One update per month. All the latest posts directly in your inbox.',
-        formUrl: '#'
+        title: "Subscribe to my SEO Newsletter",
+        text: "One update per month. All the latest posts directly in your inbox.",
+        formUrl: "#",
     },
     postsPerPage: 8,
     projectsPerPage: 8
