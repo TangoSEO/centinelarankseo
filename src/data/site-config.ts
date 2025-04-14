@@ -72,9 +72,10 @@ const siteConfig: SiteConfig = {
         text:
             "I'm **Jessica Schmukler**, SEO & CRO specialist in Tandil, Argentina. I fix what's blocking your rankings, flood you with qualified traffic, and turn clicks into paying clients. <a href='mailto:hola@centinelarank.com'>Book a free 30‑min consult →</a>",
         image: {
-            src: "/hero.jpeg",
-            alt: "Jessica Schmukler working at her desk",
+            src: "/hero-topfold.png",              // ← new file name
+            alt: "Jessica Schmukler SEO hero image", // ← describe the new picture
         },
+
         actions: [
             { text: "Get in Touch", href: "/contact" },
         ],
